@@ -1,12 +1,13 @@
-n = 153 
-num = n
-total = 0
-lod = len(str(num))
-while num > 0:
-    digit = num %10
-    total = total +  (digit ** lod)
-    num = num // 10
-if total == n:
-    print(f"{n} is a armstrong number of {lod}")    
-else:   
-    print(f"{n} is not a armstrong number of {lod}")
+def check_if_armstrong_number(nums):
+    n = nums
+    total = 0
+    lod = len(str(nums))
+
+    while n > 0:
+        last_digit = n %10
+        total = total + (last_digit **lod)
+        print(total)
+        n = n //10
+
+
+check_if_armstrong_number(153)

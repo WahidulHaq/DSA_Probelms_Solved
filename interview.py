@@ -50,6 +50,7 @@ for word in words:
     for char in word:
         revserce = char +revserce
     final.append(revserce)
+  
 print(final)
 
 
